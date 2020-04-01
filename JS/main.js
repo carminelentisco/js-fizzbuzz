@@ -8,33 +8,42 @@
 ***********************************************************************/
 
 // Contenitore numeri
+var listaNumeriHtml = document.getElementById('listaNumeriHtml'); 
 var listaNumeri = [];
 
 // Scelta dei multipli
 for (var i = 0; i <= 100; i++ ) {
-
-    var numero = i;
     
-    if ( numero % 3 == 0 && numero % 5 == 0) {
+    // Condizioni
+    if ( i % 3 == 0 && i % 5 == 0) {
     
         listaNumeri.push('<li>Fizz Buzz</li>') ;
 
-    } else if (numero % 3 == 0) {
+    } else if (i % 3 == 0) {
     
         listaNumeri.push('<li>Fizz</li>') ;
     
-    } else if (numero % 5 == 0) {
+    } else if (i % 5 == 0) {
 
         listaNumeri.push('<li>Buzz</li>') ;
 
-
     } else {
 
-        listaNumeri.push('<li>' + numero + '</li>') ;
+        listaNumeri.push('<li>' + i + '</li>') ;
 
-    }
-    
+    }   
 }
 
+// Stampa lista
+listaNumeriHtml.innerHTML = listaNumeri.join("");
 
-document.getElementById('listaNumeri').innerHTML = listaNumeri.join("");
+// Accesso al bottone
+var listButton = document.getElementById('listButton');
+
+// Show list
+listButton.addEventListener('click', 
+    function (){ 
+        listaNumeriHtml.className = "show";
+                
+    }
+);
