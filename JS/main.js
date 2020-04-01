@@ -9,61 +9,62 @@
 
 
 
-// for (var i = 0; i <= 100; i++ ) {
+ for (var i = 0; i <= 100; i++ ) {
 
-//     var numero = i;
+     var numero = i;
 
-//      if ( numero % 3 == 0 && numero % 5 == 0) {
+      if ( numero % 3 == 0 && numero % 5 == 0) {
 
-//         numero = console.log('Fizz - Buzz');
+         numero = console.log('Fizz - Buzz');
 
-//     } else if (numero % 3 == 0) {
+     } else if (numero % 3 == 0) {
     
-//         numero = console.log('Fizz');
+         numero = console.log('Fizz');
     
-//     } else if (numero % 5 == 0) {
+     } else if (numero % 5 == 0) {
 
-//         numero = console.log('Buzz');
+         numero = console.log('Buzz');
     
-//     } else {
-//         console.log(numero);
-//     }
+     } else {
+         console.log(numero);
+     }
 
-// }
+ }
 
 /***********************************************************************/
 
-var listaNumeri = document.getElementById('listaNumeri');
-var numeri = [];
-var multipliDiEntrambi = [];
-var multipliDiTre = [];
-var multipliDiCinque = [];
+// var listaNumeri = document.getElementById('listaNumeri');
+// var numeri = [];
+// var multipliDiEntrambi = [];
+// var multipliDiTre = [];
+// var multipliDiCinque = [];
 
 
 
-for (var i = 0; i <= 100; i++ ) {
+// for (var i = 0; i <= 100; i++ ) {
 
-    var numero = i;
-    numeri.push(i);
+//     var numero = i;
+//     numeri.push(i);
 
-     if ( numero % 3 == 0 && numero % 5 == 0) {
+//      if ( numero % 3 == 0 && numero % 5 == 0) {
         
-        multipliDiEntrambi.push(numero);
+//         // multipliDiEntrambi.push(numero);
+//         listaNumeri.innerHTML = '<li> Numeri da 0 a 100 : ' + i + '</li>' ;
 
-    } else if (numero % 3 == 0) {
+//     } else if (numero % 3 == 0) {
     
-        multipliDiTre.push(numero);
+//         multipliDiTre.push(numero);
     
-    } else if (numero % 5 == 0) {
+//     } else if (numero % 5 == 0) {
 
-        multipliDiCinque.push(numero);
+//         multipliDiCinque.push(numero);
 
-    }
+//     }
     
-}
+// }
 
-listaNumeri.innerHTML = '<li> Numeri da 0 a 100 : ' + numeri + '</li>' + 
-                        '<li> Multipli di 3 : ' + multipliDiTre + '</li>' + 
-                        '<li> Multipli di 5 : ' + multipliDiCinque + '</li>' + 
-                        '<li> Multipli di 3 e 5 : ' + multipliDiEntrambi + '</li>';
+// listaNumeri.innerHTML = '<li> Numeri da 0 a 100 : ' + numeri + '</li>' + 
+//                         '<li> Multipli di 3 : ' + multipliDiTre + '</li>' + 
+//                         '<li> Multipli di 5 : ' + multipliDiCinque + '</li>' + 
+//                         '<li> Multipli di 3 e 5 : ' + multipliDiEntrambi + '</li>';
 // listaNumeri.innerHTML = '<li> Multipli di 3 e 5 : ' + multipliDiEntrambi + '</li>';
