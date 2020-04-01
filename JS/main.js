@@ -7,24 +7,47 @@
  * 
 ***********************************************************************/
 
+// for (var i = 0; i <= 100; i++ ) {
+
+//     var numero = i;
+
+//     if ( numero % 3 == 0 && numero % 5 == 0) {
+
+//         numero = console.log('Fizz - Buzz');
+
+//     } else if (numero % 3 == 0) {
+    
+//         numero = console.log('Fizz');
+    
+//     } else if (numero % 5 == 0) {
+
+//         numero = console.log('Buzz');
+    
+//     } else {
+//         console.log(numero);
+//     }
+
+// }
+
 for (var i = 0; i <= 100; i++ ) {
 
-    var numero = i;
-
+     var numero = i
     if ( numero % 3 == 0 && numero % 5 == 0) {
-
-        numero = console.log('Fizz - Buzz');
-
+     
+        numero = console.log('Fizz - Buzz')
+     
     } else if (numero % 3 == 0) {
-    
-        numero = console.log('Fizz');
-    
+
+         numero = console.log('Fizz');
+
     } else if (numero % 5 == 0) {
 
-        numero = console.log('Buzz');
+         numero = console.log('Buzz');
     
     } else {
+    
         console.log(numero);
+    
     }
-}
 
+}
