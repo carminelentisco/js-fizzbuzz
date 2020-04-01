@@ -37,4 +37,4 @@ for (var i = 0; i <= 100; i++ ) {
 }
 
 
-document.getElementById('tabella').innerHTML = listaNumeri.join("");
+document.getElementById('listaNumeri').innerHTML = listaNumeri.join("");
