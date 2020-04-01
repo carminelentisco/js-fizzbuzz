@@ -46,10 +46,10 @@ listButton.addEventListener('click',
 
         if (listaNumeriHtml.classList == 'hidden'){
             listaNumeriHtml.className = "show";
-            listButton.innerHTML = 'hide list';
+            listButton.innerHTML = 'Hide list';
         } else {
             listaNumeriHtml.className = "hidden";
-            listButton.innerHTML = 'hide list';  
+            listButton.innerHTML = 'Show list';  
         }
     }
 );
