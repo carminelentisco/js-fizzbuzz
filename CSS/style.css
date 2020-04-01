@@ -69,3 +69,8 @@ body {
 .button {
     text-align: center;
 }
+
+.list ul {
+    list-style: none;
+    text-align: center;
+}

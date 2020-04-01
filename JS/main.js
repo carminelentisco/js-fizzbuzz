@@ -42,14 +42,14 @@ var listButton = document.getElementById('listButton');
 
 // Show list
 listButton.addEventListener('click', 
-    function (){ 
+    function () { 
 
         if (listaNumeriHtml.classList == 'hidden'){
             listaNumeriHtml.className = "show";
-            listButton.innerHTML = 'Hide list';
+            listButton.innerHTML = 'Hide List';
         } else {
             listaNumeriHtml.className = "hidden";
-            listButton.innerHTML = 'Show list';  
+            listButton.innerHTML = 'Show List';  
         }
     }
 );
