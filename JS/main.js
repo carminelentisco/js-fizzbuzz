@@ -7,11 +7,13 @@
  * 
 ***********************************************************************/
 
+
+
 // for (var i = 0; i <= 100; i++ ) {
 
 //     var numero = i;
 
-//     if ( numero % 3 == 0 && numero % 5 == 0) {
+//      if ( numero % 3 == 0 && numero % 5 == 0) {
 
 //         numero = console.log('Fizz - Buzz');
 
@@ -29,25 +31,39 @@
 
 // }
 
+/***********************************************************************/
+
+var listaNumeri = document.getElementById('listaNumeri');
+var numeri = [];
+var multipliDiEntrambi = [];
+var multipliDiTre = [];
+var multipliDiCinque = [];
+
+
+
 for (var i = 0; i <= 100; i++ ) {
 
-     var numero = i
-    if ( numero % 3 == 0 && numero % 5 == 0) {
-     
-        numero = console.log('Fizz - Buzz')
-     
+    var numero = i;
+    numeri.push(i);
+
+     if ( numero % 3 == 0 && numero % 5 == 0) {
+        
+        multipliDiEntrambi.push(numero);
+
     } else if (numero % 3 == 0) {
-
-         numero = console.log('Fizz');
-
+    
+        multipliDiTre.push(numero);
+    
     } else if (numero % 5 == 0) {
 
-         numero = console.log('Buzz');
-    
-    } else {
-    
-        console.log(numero);
-    
-    }
+        multipliDiCinque.push(numero);
 
+    }
+    
 }
+
+listaNumeri.innerHTML = '<li> Numeri da 0 a 100 : ' + numeri + '</li>' + 
+                        '<li> Multipli di 3 : ' + multipliDiTre + '</li>' + 
+                        '<li> Multipli di 5 : ' + multipliDiCinque + '</li>' + 
+                        '<li> Multipli di 3 e 5 : ' + multipliDiEntrambi + '</li>';
+// listaNumeri.innerHTML = '<li> Multipli di 3 e 5 : ' + multipliDiEntrambi + '</li>';
