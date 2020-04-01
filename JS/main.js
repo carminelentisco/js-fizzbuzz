@@ -43,7 +43,16 @@ var listButton = document.getElementById('listButton');
 // Show list
 listButton.addEventListener('click', 
     function (){ 
-        listaNumeriHtml.className = "show";
-             
+
+        if (listaNumeriHtml.classList == 'hidden'){
+            listaNumeriHtml.className = "show";
+            listButton.innerHTML = 'hide list';
+        } else {
+            listaNumeriHtml.className = "hidden";
+            listButton.innerHTML = 'hide list';  
+        }
     }
 );
+
+// Hide list 
+
